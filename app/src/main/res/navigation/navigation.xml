@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation"
+    app:startDestination="@id/ingresoFragment">
+
+    <fragment
+        android:id="@+id/ingresoFragment"
+        android:name="gt.edu.galileo.a2022pvsemana9.view.IngresoFragment"
+        android:label="IngresoFragment" >
+        <action
+            android:id="@+id/action_ingresoFragment_to_listadoFragment"
+            app:destination="@id/listadoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listadoFragment"
+        android:name="gt.edu.galileo.a2022pvsemana9.view.ListadoFragment"
+        android:label="ListadoFragment" />
+</navigation>
